@@ -1,0 +1,51 @@
+<main>
+  <div class="card-body">
+    Filtrar por titulo<input type="text" id="filtro" name="filtro">
+    <button class="btn btn-warning" id="filtrar">Filtrar</button>
+    <div class="row">
+      <div class="col-12">
+        <h1>Listado de objetos</h1>
+      </div>
+      {{#each objetosPerdidos}}
+      <div class="col-6">
+        <div class="row">
+          <div class="col-4">
+            <img class="card-img" src="{{foto}}">
+          </div>
+          <div class="col-6">
+            <div>
+              <h5>{{titulo}}</h5>
+            </div>
+            <div>
+              <h6>{{descripcion}}</h6>
+            </div>
+            <div class="row align-items-end">
+              <div class="col-12">
+                <a class="btn btn-warning" href='/objetos/detalle/{{_id}}'>Modificar</a>
+                <button class="btn btn-warning" id="btn-eliminar">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+</main>
+
+<script>
+  filtrar.onclick =()=>{
+    let filtro = document.querySelector('#filtro')
+    console.log("Has escrito ", filtro.value)
+    fetch('/objetos/filtrar', {
+      method: 'post',
+      body: JSON.stringify({ titulo: filtro.value }),
+      headers: { 'Content-Type': 'application/json' }
+    }).then(res => res.json())
+      .then(listado => mostrarResultados(listado))
+  }
+  function mostrarResultados(listado) {
+    listado.forEach(elem => {
+      console.log(listado)
+    })
+  }
+</script>

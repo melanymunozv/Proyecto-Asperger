@@ -1,0 +1,73 @@
+<main>
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Nuevo objeto</h1>
+              </div>
+              <form method="post" action="/objetos/guardar" enctype="multipart/form-data" style="display:grid">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Nombre</span>
+                      <input class="form-control" name="nombre" id="nombre" placeholder="nombre" value="{{nombre}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Telefono</span>
+                      <input class="form-control" name="telefono" id="telefono" placeholder="telefono"
+                        value="{{telefono}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Objeto</span>
+                      <input class="form-control" name="titulo" id="titulo" placeholder="titulo" value="{{titulo}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Descripción</span>
+                      <input class="form-control" name="descripcion" id="descripcion" placeholder="descripcion"
+                        value="{{descripcion}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Sube una foto</span>
+                      <input class="form-control" type="file" name="foto" id="foto">
+                      <div class="col-sm-4">
+                      </div>
+                    </div>
+                    <input class="form-btn" type="submit" class="btn btn-primary" value="Guardar">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  {{#if errores}}
+  <div class="row">
+    <div class="col-12">
+      {{#each errores}}
+      <p>{{error}}</p>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <div class="row">
+    <div class="col-12">
+      {{!-- <p>Cita guardada con éxito</p> --}}
+    </div>
+  </div>
+  {{/if}}
+  </div>
+</main>
+{{ session.user }}

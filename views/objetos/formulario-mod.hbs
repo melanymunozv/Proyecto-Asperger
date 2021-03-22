@@ -1,0 +1,67 @@
+<main>
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Modificar objeto</h1>
+              </div>
+              <form method="post" action="/objetos/modificar" enctype="multipart/form-data" style="display:grid">
+                <div class="row">
+                    <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">ID</span>
+                      <input class="form-control" name="_id" id="_id" value="{{_id}}" disabled>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Nombre</span>
+                      <input class="form-control" name="nombre" id="nombre" placeholder="persona que lo encontro " value="{{nombre}}" disabled>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Telefono</span>
+                      <input class="form-control" name="telefono" id="telefono" placeholder="telefono" 
+                        value="{{telefono}}" disabled>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Objeto</span>
+                      <input class="form-control" name="titulo" id="titulo" placeholder="titulo" value="{{titulo}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Descripción</span>
+                      <input class="form-control" name="descripcion" id="descripcion" placeholder="descripcion"
+                        value="{{descripcion}}">
+                    </div>
+                  </div> 
+                </div>
+                <div class="col-sm-">
+                    <input class="form-btn" type="submit" class="btn btn-succes" value="Modificar">
+                    <input class="form-btn" type="submit" class="btn btn-danger" value="Eliminar">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{#if mensaje}}
+  <div> {{mensaje}} </div>
+  {{/if}}
+</main>
+<script>
+  eliminar.onlick=()=>{
+    let id=document.querySelector('#_id').value 
+    fetch('/objetos/eliminar'+id) 
+    .then (res=> rep)
+  }
+</script>

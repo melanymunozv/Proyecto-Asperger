@@ -1,0 +1,52 @@
+<main>
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Nuevo usuario</h1>
+              </div>
+              <form method="post" action="/usuarios/guardar" enctype="multipart/form-data" style="display:grid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Nombre</span>
+                      <input class="form-control" name="nombre" id="nombre" placeholder="nombre" value="{{nombre}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Email</span>
+                      <input class="form-control" name="email" id="email" placeholder="email" value="{{email}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Telefono</span>
+                      <input class="form-control" name="telefono" id="telefono" placeholder="telefono" value="{{telefono}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Contraseña</span>
+                      <input class="form-control" name="password" id="password" placeholder="contraseña">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <input class="form-btn" type="submit" class="btn btn-primary" value="Registrarse">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <p>{{mensaje}}</p>
+  </div>
+</div>
+</main>

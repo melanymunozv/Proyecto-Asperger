@@ -1,0 +1,38 @@
+<main>
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Iniciar sesión</h1>
+              </div>
+              <form method="post" action="/usuarios/loggin" enctype="multipart/form-data" style="display:grid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Email</span>
+                      <input class="form-control" name="email" id="email" placeholder="email" value="{{email}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <span class="form-label">Contraseña</span>
+                      <input class="form-control" name="password" id="password" placeholder="contraseña">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <input class="form-btn" type="submit" class="btn btn-primary" value="Iniciar sesión">
+                  </div>
+              </form>
+              <div>
+                <p>{{mensaje}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
