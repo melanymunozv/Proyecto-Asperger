@@ -18,13 +18,13 @@ rtTareas.post('/guardar', function (req, res){
             // archivo.mv(`./public/images/${archivo.name}`,async err=>{
             //     if(err) return res.status(500).send({message:err})
                 let misTareas = daoTareas.listado()
-                res.render('tareas/listado',{objetosPerdidos: misTareas})
+                res.render('tareas/listado',{Asperger: misTareas})
             })
     })
 
 rtTareas.get('/listado', async function (req, res) {
     let misTareas = await daoTareas.listado()
-    res.render('tareas/listado',{objetosPerdidos: misTareas})
+    res.render('tareas/listado',{Asperger: misTareas})
 })
 
 rtTareas.get('/eliminar/:id',(req,res)=>{

@@ -3,28 +3,26 @@
   <div id="booking">
     <div class="card-body">
       <div class="row">
-        {{!-- <div class="booking-form"> --}}
-          <div class="col-12">
-            <h1>Listado de tareas</h1>
-          </div>
-          <div class="col-12">
-            {{#each objetosPerdidos}}
-            <div class="celda">
-              <div class="col">
-                <h5>Tarea: {{nombre}}</h5>
-                <h5>Qué hacer: {{descripcion}}</h5>
-                <h5>Puntuación: {{puntuacion}}</h5>
-                <h5>Fecha: {{fecha}}</h5>
-
-                <div class="row align-items-end">
-                  <div class="col">
-                    <button class="btn btn-primary">Realizar </button>
-                    <button class="btn btn-primary" id="btn-eliminar">Hecho</button>
-                  </div>
+        <div class="col-12">
+          <h1>Listado de tareas</h1>
+        </div>
+        <div class="col-12">
+          {{#each Asperger}}
+          <div class="celda">
+            <div class="col">
+              <h5>Tarea: {{nombre}}</h5>
+              <h5>Qué hacer: {{descripcion}}</h5>
+              <h5>Puntuación: {{puntuacion}}</h5>
+              <h5>Fecha: {{fecha}}</h5>
+              <div class="row align-items-end">
+                <div class="col">
+                  <button class="btn btn-primary">Realizar </button>
+                  <button class="btn btn-primary" id="btn-eliminar">Hecho</button>
                 </div>
               </div>
             </div>
-          
-       
-        {{/each}}
+          </div>
+
+
+          {{/each}}
 </main>
