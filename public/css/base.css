@@ -1,4 +1,4 @@
- body {
+body {
   background-image: url('../images/imagen-fondo.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -12,11 +12,11 @@ header {
   z-index: 9999;
 }
 header nav {
-  background-color:rgba(200, 218, 231, 0.267);
+  background-color:rgba(200, 218, 231);
   border-bottom: 5px solid#0184ff;
 }
 header a, header a:hover {
-  color: #4d66d4;
+  color: #0184ff;
   margin-left: 80px;
 }
 main {
@@ -60,19 +60,19 @@ main .container {
 	text-align: center;
 	margin-bottom: 15px;
 }
-.booking-form .form-header h1 {
-	font-size: 48px;
+.booking-form .form-header {
 	text-transform: uppercase;
 	font-weight: 500;
 	color:  #0184ff;
 	margin-top:95px; 
 }
 h1{
+	color:#0184ff;
 	text-align: center;
-    font-size: 48px;
+    font-size: 2em;
+	text-shadow: 0.1em 0.1em 0.05em rgb(255, 255, 255);
 	text-transform: uppercase;
 	font-weight: 400;
-	color: #000000;
 	margin-bottom: 39px;
 	
 }
@@ -156,6 +156,3 @@ h2 {
 input[disabled] {
 	cursor: not-allowed;
   }
-.listadoti .h1 {
-	color: #0184ff;
-}
