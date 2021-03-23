@@ -1,5 +1,5 @@
  body {
-  background-image: url('../images/background.jpg');
+  background-image: url('../images/imagen-fondo.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -12,11 +12,11 @@ header {
   z-index: 9999;
 }
 header nav {
-  background-color: #000;
-  border-bottom: 5px solid #F3D94E;
+  background-color:rgba(200, 218, 231, 0.267);
+  border-bottom: 5px solid#0184ff;
 }
 header a, header a:hover {
-  color: #F3D94E;
+  color: #4d66d4;
   margin-left: 80px;
 }
 main {
@@ -49,7 +49,7 @@ main .container {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(126, 180, 219, 0.267);
 }
 .booking-form {
 	max-width: 642px;
@@ -64,7 +64,7 @@ main .container {
 	font-size: 48px;
 	text-transform: uppercase;
 	font-weight: 500;
-	color:  #F3D94E;
+	color:  #0184ff;
 	margin-top:95px; 
 }
 h1{
@@ -80,7 +80,7 @@ h2 {
 	color: white;
 }
 .booking-form>form {
-	background-color: #000000;
+	background-color: #afc6e4;
 	padding: 30px 20px;
 	border-radius: 3px;
 }
@@ -134,7 +134,7 @@ h2 {
 }
 .booking-form .submit-btn {
 	color: #101113;
-	background-color: #ffc001;
+	background-color: #0184ff;
 	font-weight: 700;
 	height: 50px;
 	border: none;
@@ -150,9 +150,12 @@ h2 {
     height: 170px;
     object-fit: cover;
 }
-.card-body{
+/* .card-body{
 	background: rgba(238, 236, 236, 0.6);
-}
+} */
 input[disabled] {
 	cursor: not-allowed;
   }
+.listadoti .h1 {
+	color: #0184ff;
+}

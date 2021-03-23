@@ -5,9 +5,11 @@ const bcrypt = require('bcrypt')
 const schemaUsuario = new Schema({
     
     nombre: {type:String},
+    apellido: {type: String},
     email: {type:String, required:true, index:true, lowercase:true, unique:true},
     telefono: {type: String, required: true},
-    password:{type:String, required:true}
+    password:{type:String, required:true},
+    edad: {type:String,} 
 })
 schemaUsuario.pre('save', function(next) {
     bcrypt.hash(this.password, 6)

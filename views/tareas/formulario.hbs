@@ -1,0 +1,80 @@
+<main>
+  <div id="booking" class="section">
+    <div class="section-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Nueva Tarea</h1>
+              </div>
+              <form method="post" action="/tareas/guardar" enctype="multipart/form-data" style="display:grid">
+                <div class="row">
+                   <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Usuario</span>
+                      <select class="form-control" name="usuario" id="">
+                        <option value="Usuario">usuario 1</option>
+                        <option value="Usuario">usuario 2</option>
+                        <option value="Usuario">usuario 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Nueva Tarea</span>
+                      <input class="form-control" name="nombre" id="nombre" placeholder="nombre" value="{{nombre}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Descripción</span>
+                      <input class="form-control" name="descripcion" id="descripcion" placeholder="descripcion" value="{{descripcion}}"
+                        >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Puntuación</span>
+                      <input type="number" class="form-control" name="puntuacion" id="puntuacion" placeholder="100" value="{{puntuacion}}">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span class="form-label">Descripción</span>
+                      <input type="date" class="form-control" name="fecha" id="fecha" placeholder="fecha"
+                        value="{{fecha}}">
+                    </div>
+                  </div>
+                    </div>
+                    <div class="col-sm-6">
+                    <input class="form-btn" class="form-control" type="submit" class="btn btn-primary" value="Guardar">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  {{#if errores}}
+  <div class="row">
+    <div class="col-12">
+      {{#each errores}}
+      <p>{{error}}</p>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <div class="row">
+    <div class="col-12">
+      
+    </div>
+  </div>
+  {{/if}}
+  </div>
+</main>
+{{ session.user }}

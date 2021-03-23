@@ -1,5 +1,5 @@
 const Usuario = require('../models/Usuario')
-const mailer = require('../modules/mailer')
+
 
 let daoUsuarios={}
 

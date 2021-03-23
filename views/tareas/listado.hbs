@@ -1,0 +1,35 @@
+<main>
+  <div id="booking">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <div class="listadoti"><h1>Listado de tareas</h1></div>
+      </div>
+      {{#each objetosPerdidos}}
+      <div class="col-12">
+        <div class="col-12 text-center">
+          <div>
+            <h5>Tarea: {{nombre}}</h5>
+          </div>
+          <div>
+            <h6>Qué hacer: {{descripcion}}</h6>
+          </div>
+          <div>
+            <h6>Puntuación: {{puntuacion}}</h6>
+          </div>
+          <div>
+            <h6>Fecha: {{fecha}}</h6>
+          </div>
+          <div class="row align-items-end">
+            <div class="col">
+              <button class="btn btn-primary">Realizar </button>
+              <button class="btn btn-primary" id="btn-eliminar">Hecho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {{/each}}
+</main>
