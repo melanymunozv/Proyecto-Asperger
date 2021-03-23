@@ -1,37 +1,30 @@
 <main>
+
   <div id="booking">
     <div class="card-body">
       <div class="row">
-        <div class="booking-form">
+        {{!-- <div class="booking-form"> --}}
           <div class="col-12">
             <h1>Listado de tareas</h1>
           </div>
-          {{#each objetosPerdidos}}
           <div class="col-12">
-            <div class="col-12 text-center">
-              <div>
+            {{#each objetosPerdidos}}
+            <div class="celda">
+              <div class="col">
                 <h5>Tarea: {{nombre}}</h5>
-              </div>
-              <div>
-                <h6>Qué hacer: {{descripcion}}</h6>
-              </div>
-              <div>
-                <h6>Puntuación: {{puntuacion}}</h6>
-              </div>
-              <div>
-                <h6>Fecha: {{fecha}}</h6>
-              </div>
-              <div class="row align-items-end">
-                <div class="col">
-                  <button class="btn btn-primary">Realizar </button>
-                  <button class="btn btn-primary" id="btn-eliminar">Hecho</button>
+                <h5>Qué hacer: {{descripcion}}</h5>
+                <h5>Puntuación: {{puntuacion}}</h5>
+                <h5>Fecha: {{fecha}}</h5>
+
+                <div class="row align-items-end">
+                  <div class="col">
+                    <button class="btn btn-primary">Realizar </button>
+                    <button class="btn btn-primary" id="btn-eliminar">Hecho</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{/each}}
+          
+       
+        {{/each}}
 </main>

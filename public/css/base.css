@@ -21,7 +21,7 @@ header a, header a:hover {
   font-size:1.4em;
 }
 main {
-  margin-top: 2em;
+  margin-top: 8em;
   margin-bottom: 80px;
 }
 main .container {
@@ -169,4 +169,12 @@ h3 {
 	font-weight: 400;
 	margin-bottom: 39px;
 	font-size: 4em;
+}
+h6 {
+	padding: 4px;
+}
+.celda {
+	margin: 3px;
+	border-bottom: 1px dashed blue;
+	padding-bottom: 10px;
 }
