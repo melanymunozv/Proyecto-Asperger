@@ -1,6 +1,5 @@
 const Usuario = require('../models/Usuario')
 
-
 let daoUsuarios={}
 
 daoUsuarios.guardar=function guardar(usuario){
