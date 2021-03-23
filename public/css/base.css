@@ -162,3 +162,11 @@ input[disabled] {
 	border: none;
 	margin-top: 1em;
 }
+h3 {
+	margin-top: 245px;
+	text-shadow: 0.1em 0.1em 0.05em rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 39px;
+	font-size: 4em;
+}
