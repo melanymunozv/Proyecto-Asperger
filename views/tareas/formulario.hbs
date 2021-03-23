@@ -10,7 +10,7 @@
               </div>
               <form method="post" action="/tareas/guardar" enctype="multipart/form-data" style="display:grid">
                 <div class="row">
-                   <div class="col-sm-6">
+                  <div class="col-sm-6">
                     <div class="form-group">
                       <span class="form-label">Usuario</span>
                       <select class="form-control" name="usuario" id="">
@@ -29,14 +29,15 @@
                   <div class="col-sm-6">
                     <div class="form-group">
                       <span class="form-label">Descripción</span>
-                      <input class="form-control" name="descripcion" id="descripcion" placeholder="descripcion" value="{{descripcion}}"
-                        >
+                      <input class="form-control" name="descripcion" id="descripcion" placeholder="descripcion"
+                        value="{{descripcion}}">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <span class="form-label">Puntuación</span>
-                      <input type="number" class="form-control" name="puntuacion" id="puntuacion" placeholder="100" value="{{puntuacion}}">
+                      <input type="number" class="form-control" name="puntuacion" id="puntuacion" placeholder="100"
+                        value="{{puntuacion}}">
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -46,11 +47,10 @@
                         value="{{fecha}}">
                     </div>
                   </div>
-                    </div>
-                    <div class="col-sm-6">
-                    <input class="form-btn" class="form-control" type="submit" class="btn btn-primary" value="Guardar">
-                      </div>
-                    </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group d-flex justify-content-center">
+                    <input type="submit" class="btn btn-primary " value="Guardar">
                   </div>
                 </div>
             </div>
@@ -58,6 +58,9 @@
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  </div>
   </div>
   </form>
   {{#if errores}}
@@ -71,7 +74,7 @@
   {{else}}
   <div class="row">
     <div class="col-12">
-      
+
     </div>
   </div>
   {{/if}}

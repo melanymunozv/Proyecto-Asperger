@@ -13,14 +13,15 @@ header {
 }
 header nav {
   background-color:rgba(200, 218, 231);
-  border-bottom: 5px solid#0184ff;
+  border-bottom: 5px solid#2b45a3;
 }
 header a, header a:hover {
-  color: #0184ff;
+  color: #2b45a3;
   margin-left: 80px;
+  font-size:1.4em;
 }
 main {
-  margin-top: 110px;
+  margin-top: 2em;
   margin-bottom: 80px;
 }
 main .container {
@@ -63,11 +64,11 @@ main .container {
 .booking-form .form-header {
 	text-transform: uppercase;
 	font-weight: 500;
-	color:  #0184ff;
-	margin-top:95px; 
+	color:  #2b45a3;
+	margin-top: 8em;
 }
 h1{
-	color:#0184ff;
+	color:#2b45a3;
 	text-align: center;
     font-size: 2em;
 	text-shadow: 0.1em 0.1em 0.05em rgb(255, 255, 255);
@@ -156,3 +157,8 @@ h2 {
 input[disabled] {
 	cursor: not-allowed;
   }
+.btn-primary{
+	background-color:#2b45a3;
+	border: none;
+	margin-top: 1em;
+}
